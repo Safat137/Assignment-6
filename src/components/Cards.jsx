@@ -19,7 +19,7 @@ export default function Cards({ card, isBuyed, setIsBuyed, isAdded, setIsAdded }
 
         <img src={card.image} alt="" className='h-[50px] w-fit' />
         <span className=
-        {`${card.tag === 'new' ? 'bg-green-200 text-green-800' : card.tag === 'popular' ? 'bg-purple-400 text-purple-800' : card.tag=== 'best seller' ? 'bg-yellow-400 text-yellow-700': ''} rounded-2xl p-2`}
+        {`${card.tag === 'new' ? 'bg-red-400 text-green-800' : card.tag === 'popular' ? 'bg-purple-400 text-purple-800' : card.tag=== 'best seller' ? 'bg-yellow-400 text-yellow-700': ''} rounded-2xl p-2`}
         >{card.tag}</span>
       </div>
       <h1 className='text-3xl'>{card.name}</h1>
